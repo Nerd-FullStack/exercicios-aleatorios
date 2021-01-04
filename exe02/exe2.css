@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 50px;
+}
+*{
+    color: white;
+    text-align: center;
+}
+a img{
+    width: 300px;
+    margin: 10px;
+}
+iframe{
+    width: 600px;
+    height: 400px;
+}
+.playlist{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+.voltar{
+    font-weight: bold;
+    text-decoration: none;
+}
