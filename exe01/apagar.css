@@ -1,0 +1,260 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+}
+
+header{
+    background-color: darkmagenta;
+    color: white;
+    display: flex;
+    padding: 50px;
+}
+header .logo{
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: none;
+    color: lemonchiffon;
+}
+
+nav{
+   margin-left: auto;
+   margin-top: 10px;
+}
+
+nav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 6px;
+    transition: 0.5s;
+}
+nav a:hover{
+    font-size: 17px;
+    color: rgb(230, 221, 207);
+}
+
+/*-----------Planos-----------*/
+.container-planos{
+    background-color: rgb(160, 156, 156);
+    color: rgb(255, 255, 255);
+    padding: 60px 0px;
+    text-align: center;
+}
+
+.planos .plano{
+    margin: 10px 10px;
+    padding: 10px;
+    border: 5px solid lightgray;
+    border-radius: 20px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    
+}
+.planos img{
+   width: 100%;
+   max-width: 250px;
+   border-radius: 10px;
+}
+
+.descricao-plano li, h3{
+    list-style-type: none;
+    margin: 10px 0px;
+}
+
+.planos .plano:nth-last-child(3){
+    background-color: rgb(218, 109, 31);
+    transition: 0.7s;
+}
+
+.planos .plano:nth-last-child(2){
+    background-color: silver;
+    transition: 0.7s;
+}
+
+.planos .plano:nth-last-child(1){
+    background-color: goldenrod;
+    transition: 0.7s;
+}
+
+.planos .plano:nth-last-child(3):hover{
+    background-color: darkcyan;
+}
+.planos .plano:nth-last-child(2):hover{
+    background-color: darkcyan;
+}
+.planos .plano:nth-last-child(1):hover{
+    background-color: darkcyan;
+}
+
+/*---------Fim Planos---------*/
+
+/*--------Formulário----------*/
+.formulario-container{
+    background-image: url(Imagens/sunset.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 10px;
+    height: 500px;
+}
+.formulario{
+    max-width: 350px;
+    background-color: rgba(252, 159, 122,0.7);
+    margin: 40px auto 0px auto;
+    border: lightslategray solid 5px;
+    border-radius: 15px;
+    text-align: center;
+   
+}
+.formulario h3{
+    background-color: rgb(64, 97, 131,0.7);
+    padding: 20px;
+    color: white;
+    margin-top: 0px;
+    border-radius: 10px 10px 0px 0px;
+}
+form{
+    max-width: 350px;
+    padding: 10px;
+    margin: 10px auto 0px auto;
+    text-align: center;
+}
+form input{
+    padding: 7px;
+    border-radius: 5px;
+    border: 0;
+    width: 80%;
+    margin: 20px 0px;
+}
+form input[type=button]{
+    width: 40%;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(238, 225, 225);
+    cursor: pointer;
+    background-color: rgba(54, 97, 133, 0.7);
+}
+/*------Fim Formulário--------*/
+
+/*------------Mosaico----------*/
+.mosaico-container{
+    height: 400px;
+    background-color: rgb(124, 4, 124);
+    padding:50px 20px;
+}
+.mosaico-container h1{
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+.mosaico-container h2{
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 50px;
+}
+.mosaico{
+    width: 100%;
+    max-width: 700px;
+    background: lightgray;
+    margin: 0 auto;
+    display: flex;
+    overflow-x: scroll;
+}
+.mosaico img{
+    width: 50%;
+    border: 2px solid black;
+    box-sizing: border-box;
+    
+}
+
+/*----------Fim Mosaico--------*/
+
+/*--------links download-------*/
+.link-container{
+    background-color: rgb(17, 141, 190);
+    padding: 15% 0;
+}
+.link-container a{
+    width: 200px;
+    margin: 0 auto;
+    display: flex; 
+    text-decoration: none;
+    margin-bottom: 40px;
+    padding: 30px;
+    font-size: 40px;
+    border-radius: 100px;
+}
+.link-container a:nth-child(1){
+    color: white;
+    background-color: yellowgreen;
+   
+}
+.link-container a:nth-child(2){
+    color: whitesmoke;
+    background-color: limegreen;
+}
+
+/*--------Fim links download-------*/
+
+
+/*------------media screen---------------*/
+@media screen and (max-width:768px){
+    header{
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        padding: 35px 0px;
+    }
+    nav{
+        margin-top: 30px;
+    }
+
+    .planos .plano{
+        width: 80%;
+        max-width: 400px;
+        margin: 10px 10px;
+        padding: 10px;
+        border: 5px solid lightgray;
+        border-radius: 20px;
+        text-align: center;
+        display: inline-block;
+    }
+    .descricao-plano{
+        font-size: 20px;
+    }
+    .planos img{
+        max-width: 350px;
+    }
+
+}
+@media screen and (max-width:530px){
+    .mosaico-container{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:360px){
+    header .logo{
+        font-size: 23px;
+    }
+    nav a{
+        margin: 0px 0px;
+        font-size: 13px;
+    }
+    nav a:hover{
+        font-size: 14px;
+    }
+    .descricao-plano{
+        font-size: 18px;
+    }
+
+    .link-container a{
+        width: 125px;
+        font-size: 25px;
+        padding: 25px;
+    }
+}
